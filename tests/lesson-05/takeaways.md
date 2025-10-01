@@ -23,13 +23,13 @@ console.log(add(2, 3)); // 5 - cả hai đều giống nhau
 
     - Khai báo hàm có tham số name. Trả về chuỗi Hello `<name>`
 
-![alt text](img/image.png)
+![alt text](../../img/image.png)
 
 - Ví dụ 2: 
 
     - Khai báo hàm có tham số price, quantity, discount. Trả về giá trị, biết giá trị = price * quantity - discount
 
-![alt text](img/image-2.png)
+![alt text](../../img/image-2.png)
 
 ## Lambda Function
 
@@ -62,13 +62,13 @@ const add = (a, b) => {
 
     - Khai báo hàm có tham số name. Trả về chuỗi Hello `<name>`
 
-![alt text](img/image-3.png)
+![alt text](../../img/image-3.png)
 
 - Ví dụ 2: 
 
     - Khai báo hàm có tham số price, quantity, discount. Trả về giá trị, biết giá trị = price * quantity - discount
 
-![alt text](img/image-4.png)
+![alt text](../../img/image-4.png)
 
 - **Một số cách viết khác:**
 
@@ -102,13 +102,13 @@ const triple = (x) => x * 3;
 
     - Khai báo hàm có tham số name. Trả về chuỗi Hello `<name>`
 
-![alt text](img/image-5.png)
+![alt text](../../img/image-5.png)
 
 - Ví dụ 2: 
 
     - Khai báo hàm có tham số price, quantity, discount. Trả về giá trị, biết giá trị = price * quantity - discount 
 
-![alt text](img/image-6.png)
+![alt text](../../img/image-6.png)
 
 ## Anonymous function
 
@@ -152,7 +152,7 @@ setTimeout(function() {
 
     - Các ô input
 
-![alt text](img/image-7.png)
+![alt text](../../img/image-7.png)
 
 - Máy tính sẽ “nhìn” ở dưới dạng “cây có cấu trúc”
     - Mở cây này bằng cách bấm `phím F12` (hoặc chuột phải vào vùng trống, chọn “Inspect”); sau đó chọn tab `“Element”`
@@ -161,7 +161,7 @@ setTimeout(function() {
 
     - Ví dụ:
 
-![alt text](img/image-8.png)
+![alt text](../../img/image-8.png)
 
 - **Node**
 
@@ -170,17 +170,17 @@ setTimeout(function() {
 ````
 - Một element sẽ có dạng như trên `<option>United States</option>`
 
-![alt text](img/image-9.png)
+![alt text](../../img/image-9.png)
 
-![alt text](img/image-10.png)
+![alt text](../../img/image-10.png)
 
-![alt text](img/image-11.png)
+![alt text](../../img/image-11.png)
 
-![alt text](img/image-12.png)
+![alt text](../../img/image-12.png)
 
-![alt text](img/image-14.png)
+![alt text](../../img/image-14.png)
 
-![alt text](img/image-13.png)
+![alt text](../../img/image-13.png)
 
 ## Các thẻ HTML thường gặp
 
@@ -246,7 +246,7 @@ setTimeout(function() {
 
 1.  **Input**
 
-![alt text](img/image-15.png)
+![alt text](../../img/image-15.png)
 
 2. **Fill**
 
@@ -304,7 +304,7 @@ setTimeout(function() {
 
     - bắt đầu bởi 1 /
 
-![alt text](img/image-16.png)
+![alt text](../../img/image-16.png)
 
 2. **Tương đối**: tìm dựa vào đặc tính
 
@@ -312,7 +312,7 @@ setTimeout(function() {
 
     - `//tenthe[@thuoctinh=”giatri”]`
 
-![alt text](img/image-17.png)
+![alt text](../../img/image-17.png)
 
 - Nên dùng XPath tương đối
 
@@ -344,7 +344,7 @@ test('<tên test>', async ({ page }) => {
 });
 ````
 
-![alt text](img/image-18.png)
+![alt text](../../img/image-18.png)
 
 2. **step**: 
 
@@ -364,11 +364,11 @@ test('<tên test>', async ({ page }) => {
 });
 ````
 
-![alt text](img/image-19.png)
+![alt text](../../img/image-19.png)
 
 - **Lưu ý**: step nên được map 1-1 với test case để dễ dàng maintain.
 
-![alt text](img/image-20.png)
+![alt text](../../img/image-20.png)
 
 3. **navigate**: 
 
@@ -382,7 +382,7 @@ test('<tên test>', async ({ page }) => {
 await page.goto('https://pw-practice.playwrightvn.com/');
 ````
 
-![alt text](img/image-21.png)
+![alt text](../../img/image-21.png)
 
 4. **Locate**: 
 
@@ -406,7 +406,7 @@ page.locator(“//input[@id=’email’]”)
 await page.locator("//button").click();
 ````
 
-![alt text](img/image-22.png)
+![alt text](../../img/image-22.png)
 
 - Double click
 
@@ -447,7 +447,7 @@ page.locator("//input").fill('Playwright Viet Nam');
 ````javascript
 page.locator("//input").pressSequentially('Playwright Viet Nam', {delay: 100,});
 ````
-![alt text](img/image-23.png)
+![alt text](../../img/image-23.png)
 
 ### **Radio/checkbox**
 
@@ -465,7 +465,8 @@ page.locator("//input").check();
 page.locator("//input").setChecked(false);
 ````
 
-![alt text](img/image-24.png)
+![alt text](../../img/image-24.png)
+
 
 ### **Select**
 
@@ -473,14 +474,14 @@ page.locator("//input").setChecked(false);
 await page.locator('//select[@id=”country”]').selectOption({ label: 'USA' })
 ````
 
-![alt text](img/image-25.png)
+![alt text](../../img/image-25.png)
 
 ### **Upload file**
 
 ````javascript
 await page.locator("//input[@id='profile']").setInputFiles("<file-path>");
 ````
-![alt text](img/image-26.png)
+![alt text](../../img/image-26.png)
 
 
 
